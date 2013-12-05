@@ -25,4 +25,12 @@ social/static/pylons.css
 social/static/pyramid-small.png
 social/static/pyramid.png
 social/static/transparent.gif
-social/templates/mytemplate.pt
+social/static/css/bootstrap-theme.css
+social/static/css/bootstrap-theme.min.css
+social/static/css/bootstrap.css
+social/static/css/bootstrap.min.css
+social/static/js/bootstrap.js
+social/static/js/bootstrap.min.js
+social/static/js/jquery.js
+social/templates/base.mako
+social/templates/social.mako
