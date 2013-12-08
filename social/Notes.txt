@@ -1,0 +1,5 @@
+http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
+
+http://smarchal.com/twbscolor/?bd=e74c3c&bh=c0392b&cd=ecf0f1&ch=ffbbbc
+
+nginx to proxy to pyramid servers.
