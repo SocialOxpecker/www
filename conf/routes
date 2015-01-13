@@ -11,9 +11,13 @@ GET        /social/facebook        controllers.SocialOxpecker.facebook(code: Str
 GET        /social/twitter         controllers.SocialOxpecker.twitter(code:  String)
 
 # Content
+# User
+GET        /user/login             controllers.UserController.login()
+GET        /user/loginPlay         controllers.UserController.loginPlay()
+GET        /user/validate          controllers.UserController.validate(email: String, password: String)
+
 ##Devel
-GET        /aboutus             controllers.SocialOxpecker.aboutus()
-GET        /login               controllers.UserController.login()
+GET        /aboutus                controllers.SocialOxpecker.aboutus()
 
 #forwarding
 GET        /redirect               controllers.SocialOxpecker.redirect()
