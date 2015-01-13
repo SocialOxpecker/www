@@ -1,0 +1,80 @@
+@(title: String, navigationItems: Html, blockContent: Html)(content: Html)
+
+<html lang="en"><head>  <title>Social OxPecker - @title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+    <link href="@routes.Assets.at("stylesheets/bootstrap.min.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("stylesheets/bootstrap-responsive.css")" rel="stylesheet">
+
+    <link href="@routes.Assets.at("stylesheets/baseoverride.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("stylesheets/docs.css")" rel="stylesheet">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <base href="/" >
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="@routes.Assets.at("javascripts/angular.js")"></script>
+    <!-- Le styles -->
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+
+</head>
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+
+<!-- Begin Top Navigation Bar -->
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Social Langoliers</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<!-- End Top Navigation Bar -->
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="span2 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav">
+                    @navigationItems
+            </ul>
+        </div>
+        <div class="span10">
+            <section id="global">
+                <div class="starter-template">
+                    <p class="lead">@blockContent</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </body>
+</html>

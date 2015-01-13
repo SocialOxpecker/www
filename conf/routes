@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                       controllers.SocialOxpecker.index()
+GET        /home                   controllers.SocialOxpecker.home()
+
+#social
+GET        /social/facebook        controllers.SocialOxpecker.facebook(code: String)
+GET        /social/twitter         controllers.SocialOxpecker.twitter(code:  String)
+
+# Content
+##Devel
+GET        /aboutus             controllers.SocialOxpecker.aboutus()
+GET        /login               controllers.UserController.login()
+
+#forwarding
+GET        /redirect               controllers.SocialOxpecker.redirect()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file           controllers.Assets.at(path="/public", file)
